@@ -11,7 +11,7 @@ public class FahtoCelExam {
 
         Cel = (Fah -32) / 1.8;
 
-        System.out.println("Fe to Cel : " + Cel);
+        System.out.println("Fah to Cel : " + Cel);
 
     }
 }

@@ -11,7 +11,7 @@ public class CeltoFahExam {
 
         Fah = (Cel * 1.8) + 32;
 
-        System.out.println("Cel to Fe : " + Fah);
+        System.out.println("Cel to Fah : " + Fah);
 
     }
 }
