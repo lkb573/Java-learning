@@ -17,7 +17,7 @@ public class HelloWorld {
         int howManyDay = 90, hoursPerDay = 8;
         int totalHour = howManyDay * hoursPerDay;
 
-        System.out.println("Total Hours = " + totalHour);
+        System.out.println("Total time = " + totalHour);
 
 
 
