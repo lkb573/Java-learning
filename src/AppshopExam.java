@@ -4,7 +4,7 @@ public class AppshopExam {
     public static void main(String[] args){
         double iPad = 999_000;
 
-        iPad = iPad / 0.15;
+        iPad = iPad * 0.85;
 
         System.out.println("Discount Cash = " + iPad);
 
