@@ -13,6 +13,8 @@ public class MyAccountBook {
 
         System.out.println("Today total Cash = " + totalCash);
 
+        System.out.println("Add Line");
+
         int piboNum;
         Scanner scan = new Scanner(System.in);
 
