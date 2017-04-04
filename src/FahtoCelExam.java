@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 
-public class FetoCelExam {
+public class FahtoCelExam {
     public static void main(String[] args) {
         double Cel, Fe;
         Scanner scan = new Scanner(System.in);

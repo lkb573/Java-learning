@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 
-public class CeltoFeExam {
+public class CeltoFahExam {
     public static void main(String[] args){
         double Cel, Fe;
         Scanner scan = new Scanner(System.in);
