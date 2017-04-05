@@ -7,11 +7,17 @@ public class StringArrExam {
                 "두끼", "KFC", "미스사이공", "아비꼬", "구로곱창" };
 
 
-        int sumSpell=0;
+        int sumSpell=0, count=0;
+        double avgChar=0.0f;
         for (String e : strArr){
             sumSpell += e.length();
+            count++;
         }
+        avgChar = sumSpell / (double)count;
+
+
         System.out.printf("All count Char : %d \n", sumSpell);
+        System.out.printf("Average Char : %.1f \n", avgChar);
 
         for (String i : strArr){
             if(i.length() <= 3)
