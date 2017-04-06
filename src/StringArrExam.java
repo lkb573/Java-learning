@@ -19,9 +19,20 @@ public class StringArrExam {
         System.out.printf("All count Char : %d \n", sumSpell);
         System.out.printf("Average Char : %.1f \n", avgChar);
 
+        String[] resultArr = new String[strArr.length];
+        count=0;
         for (String i : strArr){
-            if(i.length() <= 3)
-                System.out.println(i);
+            if(i.length() <= 3) {
+                resultArr[count] = i;
+                //System.out.println(i);
+                count++;
+            }
+        }
+
+        for (String j : resultArr){
+            if(j == null)
+                break;
+            System.out.println(j);
         }
 
     }
