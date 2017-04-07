@@ -35,16 +35,32 @@ public class ArrayExam {
                System.out.println(e);
        }
 
-       int sumNum=0, count=1;
-       double averNum;
+       /*int sumNum=0;
+
        for (int i : iArr){
-           sumNum = sumNum + i;
-           count++;
+           sumNum += i;
        }
 
-       averNum = sumNum / count;
+       double averNum = sumNum / iArr.length;*/
 
-       System.out.printf("Average : %.2f", averNum);
+       double averNum = calcAver(iArr);
+
+       System.out.printf("Average : %.1f", averNum);
 
     }
+
+
+    public static double calcAver(int[] inArr){
+        int sum=0;
+
+        for (int i : inArr){
+            sum += i;
+        }
+
+        return  (double)sum / inArr.length;
+
+
+    }
+
+
 }
