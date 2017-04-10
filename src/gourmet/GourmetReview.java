@@ -72,8 +72,14 @@ public class GourmetReview {
         GourmetService service = new GourmetService();
         double aver = service.calcAverScore(list);
 
+
         System.out.println("Score Average = " + aver);
 
+        Gourmet g1 = new Gourmet("a", "b", 25);
+        Gourmet g2 = new Gourmet("a", "b", 30);
+
+        g1.getScore();
+        g2.getScore();
 
     }
 }
