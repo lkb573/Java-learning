@@ -1,6 +1,7 @@
 package majorleague;
 
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MajorService {
@@ -28,6 +29,17 @@ public class MajorService {
         }
 
         return count;
+    }
+
+    public List<MajorPark> haveAliaspark(List<MajorPark> list){
+
+        List<MajorPark> aliasList = new ArrayList<>();
+
+        for (MajorPark e : list){
+            if( !(e.getParkAlias().equals("")) );
+                aliasList.add(e);
+        }
+        return aliasList;
     }
 
 
