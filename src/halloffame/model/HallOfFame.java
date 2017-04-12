@@ -1,4 +1,4 @@
-package halloffame;
+package halloffame.model;
 
 
 public class HallOfFame {

@@ -1,12 +1,14 @@
 package halloffame;
 
 
+import halloffame.model.HallOfFame;
+
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
 
 public class HallOfFameMain {
     public static void main(String[] args) throws IOException {
@@ -32,6 +34,17 @@ public class HallOfFameMain {
                 fame.setNeeded(Integer.parseInt(splitString[4]));
             if (!(splitString[5].equals("")))
                 fame.setVote(Integer.parseInt(splitString[5]));
+
+
+            //use Operation
+            /*fame.setVote(
+                    splitString[5].equals("") ? 0
+                    : Integer.parseInt(splitString[5]));*/
+
+            //use NullUtil method
+            /*fame.setBallot(NullUtil.parseInt(splitString[3[]));
+            fame.setNeeded(NullUtil.parseInt(splitString[4]));
+            fame.setVote(NullUtil.parseInt(splitString[5]));*/
 
 
             //pratice code
@@ -74,7 +87,8 @@ public class HallOfFameMain {
             newlist.add(pa);
         }
 
-        System.out.println(newlist);
+        System.out.println(newlist.size());
+        System.out.println(newlist.get(1999));
 
     }
 }
