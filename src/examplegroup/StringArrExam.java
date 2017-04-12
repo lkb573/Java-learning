@@ -1,3 +1,4 @@
+package examplegroup;
 
 public class StringArrExam {
     public static void main(String[] args){

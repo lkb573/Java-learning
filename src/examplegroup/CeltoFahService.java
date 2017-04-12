@@ -1,3 +1,4 @@
+package examplegroup;
 
 public class CeltoFahService {
     public double celToFah(double celData){

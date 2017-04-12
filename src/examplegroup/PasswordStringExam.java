@@ -1,3 +1,5 @@
+package examplegroup;
+
 import java.util.Scanner;
 
 public class PasswordStringExam {

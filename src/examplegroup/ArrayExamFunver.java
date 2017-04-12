@@ -1,8 +1,10 @@
+package examplegroup;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class ArrayListExam {
+public class ArrayExamFunver {
     public static void main(String[] args){
 
         String review =
@@ -22,34 +24,10 @@ public class ArrayListExam {
         System.out.println("change String to List");
         System.out.println(changeList);
 
-        //count all char & average
-        //int sumforchar=0, count=0;
+        double aver = averCalc(changeList);
+        System.out.printf("%.2f aver of char\n", aver);
 
-        /*for (String e : changeList){
-            sumforchar += e.length();
-            count++;
-        }*/
-        //change to function method
-        double aver = actionList(changeList/*, sumforchar, count*/);
-
-
-       //double aver = sumforchar / (double)count;
-        System.out.printf(/*"%d all word number, " +
-                "%d all word char number, " +*/
-                "%.2f aver of char\n",
-                /*count, sumforchar,*/ aver);
-
-        //new List word number 5 more
-        /*List<String> wordnunderFive = new ArrayList<>();
-
-        for (String e : changeList){
-            if (e.length() <= 5){
-                wordnunderFive.add(e);
-            }
-        }*/
-
-        //change Function method
-        List<String> wordnunderFive = printFiveword(changeList);
+        List<String> wordnunderFive = charlessThenfive(changeList);
 
         System.out.println("char count <= 5 / words");
         System.out.println(wordnunderFive);
@@ -57,29 +35,31 @@ public class ArrayListExam {
     }
 
 
-    public static double actionList(
-            List<String> inputList/*, int sumLength, int checkNum*/){
+    public static double averCalc(List<String> wordList){
+
         int sumLength=0, checkNum=0;
 
-        for (String e : inputList) {
+        for (String e : wordList) {
             sumLength +=e.length();
             checkNum++;
         }
         double result = sumLength / (double)checkNum;
 
         return result;
+
     }
 
 
-    public static List<String> printFiveword(List<String> checkList){
+    public static List<String> charlessThenfive(List<String> inputList){
 
         List<String> resultList = new ArrayList<>();
 
-        for (String e : checkList){
+        for (String e : inputList){
             if (e.length() <= 5){
                 resultList.add(e);
             }
         }
         return resultList;
+
     }
 }

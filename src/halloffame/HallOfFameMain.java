@@ -46,29 +46,6 @@ public class HallOfFameMain {
             fame.setNeeded(NullUtil.parseInt(splitString[4]));
             fame.setVote(NullUtil.parseInt(splitString[5]));*/
 
-
-            //pratice code
-            /*if(splitString[3].equals("")){
-                fame.setBallot(0);
-            }
-            else {
-                fame.setBallot(Integer.parseInt(splitString[3]));
-            }
-
-            if(splitString[4].equals("")){
-                fame.setNeeded(0);
-            }
-            else {
-                fame.setNeeded(Integer.parseInt(splitString[4]));
-            }
-
-            if(splitString[5].equals("")){
-                fame.setVote(0);
-            }
-            else {
-                fame.setVote(Integer.parseInt(splitString[5]));
-            }*/
-
             hallList.add(fame);
         }
 

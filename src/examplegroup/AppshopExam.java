@@ -1,3 +1,5 @@
+package examplegroup;
+
 import java.text.DecimalFormat;
 
 public class AppshopExam {

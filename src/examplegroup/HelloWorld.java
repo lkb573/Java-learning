@@ -1,4 +1,4 @@
-
+package examplegroup;
 
 public class HelloWorld {
 

@@ -1,3 +1,4 @@
+package examplegroup;
 
 public class VarTypeExam {
     public static void main(String[] args){

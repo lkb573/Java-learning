@@ -1,3 +1,5 @@
+package examplegroup;
+
 import java.io.StringReader;
 
 public class ArrayExam {

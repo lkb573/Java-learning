@@ -1,3 +1,4 @@
+package examplegroup;
 
 public class ControlStringExam {
     public static void main(String[] args){

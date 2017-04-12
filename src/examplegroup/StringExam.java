@@ -1,3 +1,5 @@
+package examplegroup;
+
 import javax.print.DocFlavor;
 
 public class StringExam {

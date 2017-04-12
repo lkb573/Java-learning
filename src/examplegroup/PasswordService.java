@@ -1,3 +1,4 @@
+package examplegroup;
 
 public class PasswordService {
     public String makePassword(
