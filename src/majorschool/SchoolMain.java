@@ -18,6 +18,7 @@ public class SchoolMain {
 
         FileReader fr = new FileReader("src\\Schools.csv");
 
+
         BufferedReader br = new BufferedReader(fr);
 
         String line = "";

@@ -1,7 +1,7 @@
-package majorleague;
+package majorleaguemap.park;
 
 
-public class MajorPark {
+public class Major {
     private String parkKey;
     private String parkName;
     private String parkAlias;
@@ -9,26 +9,25 @@ public class MajorPark {
     private String state;
     private String country;
 
-    @Override
-    public String toString() {
-        return "MajorPark(" +
-                "parkKey='" + parkKey + '\'' +
-                ", parkName='" + parkName + '\'' +
-                ", parkAlias='" + parkAlias + '\'' +
-                ", city='" + city + '\'' +
-                ", state='" + state + '\'' +
-                ", country='" + country + '\'' +
-                ')' + '\n' ;
-    }
-
-    public MajorPark(String parkKey, String parkName, String parkAlias,
-                     String city, String state, String country) {
-        this.parkKey = parkKey;
+    public Major(/*String parkKey,*/String parkName,String parkAlias,
+                     String city,String state,String country) {
+        //this.parkKey = parkKey;
         this.parkName = parkName;
         this.parkAlias = parkAlias;
         this.city = city;
         this.state = state;
         this.country = country;
+    }
+
+    @Override
+    public String toString() {
+        return "Major{" +
+                "parkName='" + parkName + '\'' +
+                ", parkAlias='" + parkAlias + '\'' +
+                ", city='" + city + '\'' +
+                ", state='" + state + '\'' +
+                ", country='" + country + '\'' +
+                '}';
     }
 
     public String getParkKey() {
@@ -78,4 +77,5 @@ public class MajorPark {
     public void setCountry(String country) {
         this.country = country;
     }
+
 }
